@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RemitAPI",
+		"_postman_id": "a381ff8b-4ec3-4996-59ea-ffef0163c966",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "\n\nhttp://localhost:53959/api/Customer/1",
+			"request": {
+				"url": "\n\nhttp://localhost:53959/api/Customer/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Customer_Save",
+			"request": {
+				"url": "http://localhost:53959/api/Customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n  \"Id\":3,\n  \"Name\": \"Ram Kalu100\",\n  \"PhoneNo\": \"9847092495\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " Customer_Delete",
+			"request": {
+				"url": "http://localhost:53959/api/Customer/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Customer_Get",
+			"request": {
+				"url": "http://localhost:53959/api/Customer/6",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Customer_update",
+			"request": {
+				"url": "http://localhost:53959/api/Customer/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"Name\": \"Ram Update\",\n  \"PhoneNo\": \"9847092495\"\n }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
